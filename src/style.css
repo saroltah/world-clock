@@ -1,7 +1,74 @@
 body {
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/335/original/alexey-savchenko-Xe7BUe4uFBA-unsplash.jpg?1677519131);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  padding-bottom: 50px;
 }
 .project {
-  max-width: 400px;
+  max-width: 500px;
   border: 1px black solid;
+  border-radius: 3px;
+  margin: 50px auto;
+  padding: 25px 25px;
+  background: rgba(255, 255, 255, 0.8);
+}
+h1 {
+  font-size: 40px;
+  margin: 20px 0px;
+}
+select {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 7px 7px;
+  border: 5px solid #88f2f0;
+  border-radius: 3px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  margin: 40px 30px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #88f2f0;
+}
+.cityname {
+  margin: 0px;
+  font-size: 38px;
+}
+.date {
+  margin-top: 7px;
+  color: C1;
+}
+.more-cities-link {
+  margin-top: 30px;
+}
+.time {
+  font-size: 50px;
+  padding-top: 5px;
+}
+.more-cities-link {
+  font-size: 22px;
+  text-decoration: none;
+  background: rgba(136, 242, 240, 0.4);
+  padding: 10px 10px;
+  color: black;
+  margin-bottom: 10px;
+  border: 1px solid #1919a1;
+  border-radius: 3px;
+}
+footer {
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+footer a {
+  color: white;
 }
