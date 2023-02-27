@@ -35,6 +35,9 @@ select {
   padding-bottom: 20px;
   border-bottom: 5px solid #88f2f0;
 }
+.city:last-child {
+  border-bottom: none;
+}
 .cityname {
   margin: 0px;
   font-size: 38px;
