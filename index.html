@@ -12,10 +12,23 @@
   <body>
     <div class="project">
       <h1>World Clock</h1>
-      <div id="drop-down">Choose your city drop down</div>
-      <div id="cityname">Tokyo</div>
-      <div id="time">20:30:21</div>
-      <div id="date">2022.02.27</div>
+      <select name="cities" id="cities">
+        <option value="">Choose a city</option>
+        <option value="new-york">New York</option>
+        <option value="oslo">Oslo</option>
+        <option value="lima">Lima</option>
+        <option value="sydney">Sydney</option>
+      </select>
+      <div class="city">
+        <h2 class="cityname">Tokyo</h2>
+        <div class="time">20:30:21</div>
+        <div class="date">2022.02.27</div>
+      </div>
+      <div class="city">
+        <h2 class="cityname">Budapest</h2>
+        <div class="time">20:30:21</div>
+        <div class="date">2022.02.27</div>
+      </div>
       <div class="other-cities"><a href="#">More cities</a></div>
     </div>
     <footer>
