@@ -32,10 +32,12 @@ select {
   border-radius: 100px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 17px;
+  text-align: center;
 }
 option {
   font-family: "Josefin Sans", sans-serif;
   font-size: 17px;
+  text-decoration: #88f2f0;
 }
 .city {
   display: flex;
@@ -65,6 +67,7 @@ option {
   color: #1919a1;
   text-align: left;
 }
+
 .time {
   font-size: 50px;
   font-family: "Source Code Pro", monospace;
