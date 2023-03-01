@@ -13,8 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Galdeano&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap"
       rel="stylesheet"
@@ -27,31 +25,40 @@
       <h1>World Clock</h1>
       <select name="cities" id="cities">
         <option value="">Choose a city</option>
-        <option value="new-york">New York</option>
-        <option value="oslo">Oslo</option>
-        <option value="lima">Lima</option>
-        <option value="sydney">Sydney</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Europe/Budapest">Budapest</option>
+        <option value="America/Lima">Lima</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
-      <div class="city" id="tokyo">
-        <div>
-          <h2 class="cityname">Tokyo</h2>
-          <div class="date">2022.02.27</div>
+      <div id="opening-page">
+        <div class="city" id="tokyo">
+          <div>
+            <h2 class="cityname">Tokyo</h2>
+            <div class="date">2022.02.27</div>
+          </div>
+          <div>
+            <div class="time">20:30:21</div>
+          </div>
         </div>
-        <div>
-          <div class="time">20:30:21</div>
+        <div class="city" id="dublin">
+          <div>
+            <h2 class="cityname">Dublin</h2>
+            <div class="date">2022.02.27</div>
+          </div>
+          <div>
+            <div class="time">20:30:21</div>
+          </div>
+        </div>
+        <div class="city" id="cairo">
+          <div>
+            <h2 class="cityname">Cairo</h2>
+            <div class="date">2022.02.27</div>
+          </div>
+          <div>
+            <div class="time">20:30:21</div>
+          </div>
         </div>
       </div>
-      <div class="city" id="budapest">
-        <div>
-          <h2 class="cityname">Budapest</h2>
-          <div class="date">2022.02.27</div>
-        </div>
-        <div>
-          <div class="time">20:30:21</div>
-        </div>
-      </div>
-
-      <div><a href="#" class="more-cities-link">More cities</a></div>
     </div>
     <footer>
       Coded by

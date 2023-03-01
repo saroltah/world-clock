@@ -45,6 +45,7 @@ select {
 .date {
   margin-top: 7px;
   color: #1919a1;
+  text-align: left;
 }
 .time {
   font-size: 50px;
