@@ -20,6 +20,13 @@ function updateTime() {
     cairodate.innerHTML = moment().format("MMMM D, YYYY");
     cairotime.innerHTML = moment().tz("Africa/Cairo").format("HH:mm:ss");
   }
+  if (auckland) {
+    let auckland = document.querySelector("#auckland");
+    let aucklanddate = auckland.querySelector(".date");
+    let aucklandtime = auckland.querySelector(".time");
+    aucklanddate.innerHTML = moment().format("MMMM D, YYYY");
+    aucklandtime.innerHTML = moment().tz("Pacific/Auckland").format("HH:mm:ss");
+  }
 }
 setInterval(updateTime, 1000);
 
@@ -35,7 +42,7 @@ function showCity(event) {
   let cityTime = moment().tz(timeZone).format("HH:mm:ss");
   let cityDate = moment().format("MMMM D, YYYY");
   let cityName = timeZone.replace("_", " ").split("/")[1];
-  openingPage.innerHTML = `<div class="city">
+  openingPage.innerHTML = `<div class="city one-city">
           <div>
             <h2 class="cityname">${cityName}</h2>
             <div class="date">${cityDate}</div>
@@ -44,5 +51,5 @@ function showCity(event) {
             <div class="time">${cityTime}</div>
           </div>
           </div>
-           <div><a href="index.html" class="more-cities-link">More cities</a></div>`;
+           <div><a href="/" class="more-cities-link">Home</a></div>`;
 }
