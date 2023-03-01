@@ -29,6 +29,9 @@ let openingPage = document.querySelector("#opening-page");
 
 function showCity(event) {
   let timeZone = event.target.value;
+  if (timeZone === "current") {
+    timeZone = moment.tz.guess();
+  }
   let cityTime = moment().tz(timeZone).format("HH:mm:ss");
   let cityDate = moment().format("MMMM D, YYYY");
   let cityName = timeZone.replace("_", " ").split("/")[1];
