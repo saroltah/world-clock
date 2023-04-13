@@ -30,9 +30,8 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-let selectCities = document.querySelector("#cities");
-selectCities.addEventListener("change", showCity);
 let openingPage = document.querySelector("#opening-page");
+let selectCities = document.querySelector("#cities");
 
 function showCity(event) {
   let timeZone = event.target.value;
@@ -52,4 +51,7 @@ function showCity(event) {
           </div>
           </div>
            <div><a href="/" class="more-cities-link">Home</a></div>`;
+  setInterval(showCity, 1000);
 }
+
+selectCities.addEventListener("change", showCity);
