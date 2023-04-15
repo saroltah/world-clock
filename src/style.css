@@ -39,6 +39,9 @@ option {
   font-size: 17px;
   text-decoration: #88f2f0;
 }
+option:hover {
+  color: #1919a1;
+}
 .city {
   display: flex;
   justify-content: space-between;
@@ -55,8 +58,6 @@ option {
 }
 .one-city {
   border-bottom: none;
-}
-.one-city:hover {
 }
 .cityname {
   margin: 0px;
@@ -102,3 +103,21 @@ small {
   line-height: 38px;
   font-weight: bold;
 }
+@media (max-width: 573px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2.cityname {
+    font-size: 29px;
+  }
+  .time {
+    font-size: 25px;
+  }
+  option {
+    font-size: 12px;
+  }
+  .city,
+  .one-city {
+    margin: 40px 5px;
+  }
+} ;
