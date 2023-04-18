@@ -1,3 +1,6 @@
+:root {
+  --blue-color: #1919a1;
+}
 body {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
@@ -21,7 +24,7 @@ h1 {
   transition: all 1000ms ease-in-out;
 }
 h1:hover {
-  color: #1919a1;
+  color: var(--blue-color);
 }
 select {
   display: block;
@@ -40,7 +43,7 @@ option {
   text-decoration: #88f2f0;
 }
 option:hover {
-  color: #1919a1;
+  color: var(--blue-color);
 }
 .city {
   display: flex;
@@ -51,7 +54,7 @@ option:hover {
   border-bottom: 5px solid #88f2f0;
 }
 .city:hover {
-  color: #1919a1;
+  color: var(--blue-color);
 }
 .city:last-child {
   border-bottom: none;
@@ -65,7 +68,7 @@ option:hover {
 }
 .date {
   margin-top: 7px;
-  color: #1919a1;
+  color: var(--blue-color);
   text-align: left;
 }
 
