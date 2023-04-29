@@ -51,6 +51,7 @@ function showCity(event) {
           </div>
           </div>
            <div><a href="/" class="more-cities-link">Home</a></div>`;
+  setInterval(showCity, 1000);
 }
 
 selectCities.addEventListener("change", showCity);
