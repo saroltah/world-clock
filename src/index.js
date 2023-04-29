@@ -38,10 +38,11 @@ function showCity(event) {
   if (timeZone === "current") {
     timeZone = moment.tz.guess();
   }
-  let cityTime = moment().tz(timeZone).format("HH:mm:ss");
-  let cityDate = moment().format("MMMM D, YYYY");
-  let cityName = timeZone.replace("_", " ").split("/")[1];
-  openingPage.innerHTML = `<div class="city one-city">
+  function updateCityTime() {
+    let cityTime = moment().tz(timeZone).format("HH:mm:ss");
+    let cityDate = moment().format("MMMM D, YYYY");
+    let cityName = timeZone.replace("_", " ").split("/")[1];
+    openingPage.innerHTML = `<div class="city one-city">
           <div>
             <h2 class="cityname">${cityName}</h2>
             <div class="date">${cityDate}</div>
@@ -51,7 +52,9 @@ function showCity(event) {
           </div>
           </div>
            <div><a href="/" class="more-cities-link">Home</a></div>`;
-  setInterval(showCity, 1000);
+  }
+  setInterval(updateCityTime, 1000);
+  updateCityTime();
 }
 
 selectCities.addEventListener("change", showCity);
